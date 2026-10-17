@@ -167,6 +167,12 @@ gateway in all cases.
 - [x] x402 gateway with payment verification (tested: 402, valid payment,
       tampered amount rejected, replay rejected)
 - [x] Demo buyer agent + `demo.sh`
-- [ ] `cre login` + live simulation (needs a Chainlink account; human step)
-- [ ] Feed address in `config.staging.json` (look up on data.chain.link)
-- [ ] Demo video for the DoraHacks Build page
+- [x] **Real CRE CLI simulation (Oct 17, 2026):** `cre workflow simulate
+      oracle-query-workflow --target staging-settings` on CRE CLI v1.38.0.
+      Workflow compiled to WASM, HTTP trigger fired, live ETH/USD Chainlink
+      feed read on Base Sepolia returned **$2,406.40**
+      (roundId 18446744073709838341). Full oracle report returned.
+      `cre/demo-simulation-output.txt` has the transcript.
+- [x] Feed address in `config.staging.json` (ETH/USD Base Sepolia
+      `0x4aDC67696bA383F43DD60A9e78F2C97Fbbfc7cb1`)
+- [x] Demo video for the DoraHacks Build page

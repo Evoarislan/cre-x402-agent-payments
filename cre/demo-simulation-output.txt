@@ -1,0 +1,22 @@
+# Real CRE CLI simulation — Oct 17, 2026
+# Run by UY on Windows PC, CRE CLI v1.38.0, logged in as evoarislan@gmail.com
+# Command: cre workflow simulate oracle-query-workflow --target staging-settings
+# (from cre-workflow/ directory, after `bun install` in oracle-query-workflow/)
+
+! Using default private key for chain write simulation. To use your own key, set CRE_ETH_PRIVATE_KEY in your .env file or system environment.
+✓ Workflow compiled
+✓ Simulation limits enabled
+  HTTP: req=120kb resp=250kb timeout=10s | ConfHTTP: req=125kb resp=500kb timeout=1m30s | Consensus obs=25kb | ChainWrite evm_report=50kb evm_gas=1000000 solana_report=265b solana_cu=300000 | WASM binary=100mb compressed=20mb
+  Binary hash: c679cd1d2b01266cda829a4998f0bef994c717e32c77220970fcf677f15681f
+  Config hash: b9877739293e4e2f12bb6b767fbb5c9a8ef58bf5d3ec8d101643926bcc7694fe
+
+2026-10-17T12:14:46Z [SIMULATION] Simulator Initialized
+2026-10-17T12:14:46Z [SIMULATION] Running trigger trigger=http-trigger@1.0.0-alpha
+Waiting for HTTP request to start execution (listening on http://localhost:2000/trigger)...
+2026-10-17T12:17:26Z [USER LOG] Oracle query served | feed="ETH/USD" answer=2406.4 roundId=18446744073709838341
+✓ Workflow Simulation Result:
+"{\"feed\":\"ETH/USD\",\"feedAddress\":\"0x4aDC67696bA383F43DD60A9e78F2C97Fbbfc7cb1\",\"chain\":\"ethereum-testnet-sepolia-base-1\",\"decimals\":8,\"answerRaw\":\"240640000000\",\"answerScaled\":\"2406.4\",\"roundId\":\"18446744073709838341\",\"updatedAt\":\"1792252358\",\"updatedAtIso\":\"2026-10-17T15:52:38.000Z\",\"servedAt\":\"2026-10-17T16:17:26.651Z\"}"
+2026-10-17T12:17:26Z [SIMULATION] Execution finished signal received
+2026-10-17T12:17:26Z [SIMULATION] Skipping WorkflowEngineV2
+
+Simulation complete!
