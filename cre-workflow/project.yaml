@@ -1,0 +1,13 @@
+# ==========================================================================
+# CRE PROJECT SETTINGS FILE
+# ==========================================================================
+staging-settings:
+  rpcs:
+    - chain-name: ethereum-testnet-sepolia-base-1
+      url: https://sepolia.base.org
+
+# ==========================================================================
+production-settings:
+  rpcs:
+    - chain-name: ethereum-mainnet-base-1
+      url: https://mainnet.base.org

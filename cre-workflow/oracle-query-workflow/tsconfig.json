@@ -1,0 +1,1 @@
+{"compilerOptions":{"esModuleInterop":true,"forceConsistentCasingInFileNames":true,"lib":["ESNext"],"module":"ESNext","moduleResolution":"bundler","outDir":"./dist","skipLibCheck":true,"strict":true,"target":"esnext","types":[]},"include":["main.ts","workflow.ts"]}
