@@ -1,1 +1,9 @@
-{"chainName":"ethereum-testnet-sepolia-base-1","feed":{"address":"REPLACE_WITH_BASE_SEPOLIA_ETH_USD_FEED","name":"ETH/USD"},"isTestnet":true,"priceUsdc":"0.05"}
+{
+  "chainName": "ethereum-testnet-sepolia-base-1",
+  "feed": {
+    "address": "0x4aDC67696bA383F43DD60A9e78F2C97Fbbfc7cb1",
+    "name": "ETH/USD"
+  },
+  "isTestnet": true,
+  "priceUsdc": "0.05"
+}
